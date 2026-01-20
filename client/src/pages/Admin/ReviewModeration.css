@@ -1,0 +1,78 @@
+/* ReviewModeration.css */
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.review-card {
+    background-color: #1f2937; /* Matches Sidebar */
+    border: 1px solid #374151;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+.review-card h4 {
+    color: #0d9488; /* Teal Accent */
+    font-weight: 800;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.user-tag {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    background: #111827;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.comment-box {
+    background: #111827;
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 3px solid #0d9488;
+    color: #e5e7eb;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.approve-btn, .reject-btn {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+}
+
+.approve-btn {
+    background: #0d9488;
+    color: white;
+}
+
+.approve-btn:hover {
+    background: #0f766e;
+    transform: translateY(-2px);
+}
+
+.reject-btn {
+    background: #4b5563; /* Subtle gray for reject */
+    color: #fca5a5;
+}
+
+.reject-btn:hover {
+    background: #ef4444; /* Bright red on hover */
+    color: white;
+    transform: translateY(-2px);
+}
