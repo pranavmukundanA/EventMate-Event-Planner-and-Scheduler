@@ -83,6 +83,12 @@ const Login = () => {
                             required 
                         />
                     </div>
+                    
+                    <div className="flex justify-end mt-2">
+                        <button type="button" onClick={() => navigate('/forgot-password')} className="text-sm text-[#0d9488] hover:underline">
+                            Forgot password?
+                        </button>
+                    </div>
 
                     <motion.button 
                         whileHover={{ scale: 1.02 }}

@@ -20,7 +20,7 @@ import MyBookings from './pages/User/MyBookings';
 import Payment from './pages/User/Payment';
 import Ticket from './pages/User/Ticket'; 
 import Reminders from './pages/User/Reminders';
-
+import ForgotPassword from './pages/ForgotPassword';
 /**
  * A wrapper component that checks for an auth token.
  * We check localStorage directly to prevent state-sync redirects.
@@ -72,14 +72,14 @@ function App() {
                         <Ticket />
                     </ProtectedRoute>
                 } />
-                
+                <Route path="/forgot-password" element={<ForgotPassword />} />
                 {/* Protected User Profile Routes */}
                 <Route path="/user/dashboard" element={
                     <ProtectedRoute>
                         <UserDashboard />
                     </ProtectedRoute>
                 } />
-                
+
                 {/* FIXED: Path name synchronized with your workflow and added Protection */}
                 <Route path="/user/bookings" element={
                     <ProtectedRoute>
